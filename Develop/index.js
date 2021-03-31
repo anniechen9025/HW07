@@ -6,7 +6,7 @@ const fs = require("fs");
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
-    name: "project-title",
+    name: "project",
     message: "Please name your project title:",
 },
 {
@@ -95,7 +95,7 @@ function writeToFile(readmeFile, context) {
 function init() {
     inquirer.prompt(questions).then(data => {
         //TODO: Create README.md Context
-        const projecttitle = `# <${data.project - title}>`;
+        const projecttitle = `# <${data.project}>`;
 
         const description = `## Description
         ${data.description1}
