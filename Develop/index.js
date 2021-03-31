@@ -210,7 +210,7 @@ function init() {
         if (data.description1 === "" && data.description2 === "" && data.description3 === "" && data.description4 === "") {
             description = "";
         };
-        if (data.table !== true) {
+        if (data.table === false) {
             table = "";
         };
         if (data.installation === "") {
