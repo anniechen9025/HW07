@@ -96,40 +96,49 @@ const table =
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)`;
+- [License](#license)
+`;
 
 const install = 
 `## Installation
-${data.installation}`;
+${data.installation}
+`;
 
 const usage = 
 `## Usage
 ${data.usage}
-![Screenshot of HW website](${data.screenshot})`;
+![Screenshot of HW website](${data.screenshot})
+`;
 
 const credit = 
 `## Credits
-${data.credit}`;
+${data.credit}
+`;
 
 const lincense = 
 `## License
-${data.lincese}`;
+${data.lincese}
+`;
 
 const badges = 
 `## Badges
-${data.badges}`;
+${data.badges}
+`;
 
 const features =
 `## Features
-${data.features}`;
+${data.features}
+`;
 
 const contribute =
 `## How to Contribute
-${data.contribute}`;
+${data.contribute}
+`;
 
 const tests =
 `## Tests
-${data.tests}`;
+${data.tests}
+`;
 
 
 // TODO: Create a function to write README file
@@ -147,8 +156,9 @@ function writeToFile(readmeFile, context) {
 function init() {
     inquirer.prompt(questions).then(data => {
         console.log(data);
+        const file = projecttitle + description + table +install + usage + credit + lincense + badges + features + contribute + tests;
     })
-}
+};
 
 // Function call to initialize app
 init();
