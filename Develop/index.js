@@ -1,11 +1,12 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { title } = require("process");
 
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
-    name: "Project title",
+    name: "project-title",
     message: "Please name your project title:",
 },
 {
@@ -35,7 +36,7 @@ const questions = [{
 },
 {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: "Usage-instruction: Please provide instructions and examples for use",
 },
 {
@@ -60,7 +61,7 @@ const questions = [{
 },
 {
     type: "input",
-    name: "Features",
+    name: "features",
     message: "Features: Please list out your features here",
 },
 {
@@ -75,14 +76,63 @@ const questions = [{
 }];
 
 //TODO: Create README.md Context
+const projecttitle = 
+`# <${data.project - title}>`;
+
+const description = 
+`## Description
+${data.description1}
+${data.description2}
+${data.description3}
+${data.description4}`;
+
+const table = 
+`## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)`;
+
+const install = 
+`## Installation
+${data.installation}`;
+
+const usage = 
+`## Usage
+${data.usage}
+![Screenshot of HW website](${data.screenshot})`;
+
+const credit = 
+`## Credits
+${data.credit}`;
+
+const lincense = 
+`## License
+${data.lincese}`;
+
+const badges = 
+`## Badges
+${data.badges}`;
+
+const features =
+`## Features
+${data.features}`;
+
+const contribute =
+`## How to Contribute
+${data.contribute}`;
+
+const tests =
+`## Tests
+${data.tests}`;
 
 
 // TODO: Create a function to write README file
 function writeToFile(readmeFile, context) {
-    fs.writeFile("README.md",context,error=>{
-        if(error){
+    fs.writeFile("README.md", context, error => {
+        if (error) {
             console.log(error);
-        }else{
+        } else {
             console.log("Sucess")
         };
     });
@@ -90,7 +140,7 @@ function writeToFile(readmeFile, context) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(data=>{
+    inquirer.prompt(questions).then(data => {
         console.log(data);
     })
 }
