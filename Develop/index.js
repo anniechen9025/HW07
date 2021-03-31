@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { title } = require("process");
+// const { title } = require("process");
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -79,67 +79,6 @@ const questions = [{
     name: "tests",
     message: "Test: Go the extra mile and write tests for your application. Then provide examples on how to run them here.",
 }];
-
-// //TODO: Create README.md Context
-// const projecttitle = 
-// `# <${data.project - title}>`;
-
-// const description = 
-// `## Description
-// ${data.description1}
-// ${data.description2}
-// ${data.description3}
-// ${data.description4}`;
-
-// const table = 
-// `## Table of Contents
-// - [Installation](#installation)
-// - [Usage](#usage)
-// - [Credits](#credits)
-// - [License](#license)
-// `;
-
-// const install = 
-// `## Installation
-// ${data.installation}
-// `;
-
-// const usage = 
-// `## Usage
-// ${data.usage}
-// ![Screenshot of HW website](${data.screenshot})
-// `;
-
-// const credit = 
-// `## Credits
-// ${data.credit}
-// `;
-
-// const lincense = 
-// `## License
-// ${data.lincese}
-// `;
-
-// const badges = 
-// `## Badges
-// ${data.badges}
-// `;
-
-// const features =
-// `## Features
-// ${data.features}
-// `;
-
-// const contribute =
-// `## How to Contribute
-// ${data.contribute}
-// `;
-
-// const tests =
-// `## Tests
-// ${data.tests}
-// `;
-
 
 // TODO: Create a function to write README file
 function writeToFile(readmeFile, context) {
