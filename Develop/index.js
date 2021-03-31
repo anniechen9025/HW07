@@ -176,7 +176,18 @@ function init() {
         if (data.tests === "") {
             tests = "";
         };
-        const context = projecttitle + description + table + install + usage + credit + lincense + badges + features + contribute + tests;
+        const context = 
+        `${projecttitle}
+        ${description}
+        ${table}
+        ${install}
+        ${usage}
+        ${credit}
+        ${lincense}
+        ${badges}
+        ${features}
+        ${contribute}
+        ${tests}`;
         writeToFile(context);
     })
 };
