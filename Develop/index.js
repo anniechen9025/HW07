@@ -74,6 +74,9 @@ const questions = [{
     message: "Test: Go the extra mile and write tests for your application. Then provide examples on how to run them here.",
 }];
 
+//TODO: Create README.md Context
+
+
 // TODO: Create a function to write README file
 function writeToFile(readmeFile, context) {
     fs.writeFile("README.md",context,error=>{
@@ -86,7 +89,11 @@ function writeToFile(readmeFile, context) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(data=>{
+        console.log(data);
+    })
+}
 
 // Function call to initialize app
 init();
