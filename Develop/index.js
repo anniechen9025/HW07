@@ -30,6 +30,11 @@ const questions = [{
     message: "DP-4: What did you learn?",
 },
 {
+    type:"confirm",
+    name:"table",
+    message:"Do you want a table of contents? (only need it when your readme is long)",
+},
+{
     type: "input",
     name: "installation",
     message: "Installation: What are the steps required to install your project? (provide step-by-step description)",
