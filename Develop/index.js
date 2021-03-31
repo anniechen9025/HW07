@@ -156,7 +156,41 @@ function writeToFile(readmeFile, context) {
 function init() {
     inquirer.prompt(questions).then(data => {
         console.log(data);
-        const file = projecttitle + description + table +install + usage + credit + lincense + badges + features + contribute + tests;
+        if(data.project===""){
+            projecttitle ="";
+        };
+        if(data.description1===""&&data.description2===""&&data.description3===""&&data.description4===""){
+            description="";
+        };
+        if(data.table!==true){
+            table="";
+        };
+        if(data.installation===""){
+            install="";
+        };
+        if(data.usage===""&&data.screenshot===""){
+            usage="";
+        };
+        if(data.credit===""){
+            credit="";
+        };
+        if(data.lincense===""){
+            lincense="";
+        };
+        if(data.badges===""){
+            badges="";
+        };
+        if(data.features===""){
+            features="";
+        };
+        if(data.contribute===""){
+            contribute="";
+        };
+        if(data.tests===""){
+            tests="";
+        };
+        const context = projecttitle + description + table +install + usage + credit + lincense + badges + features + contribute + tests;
+        writeToFile(context);
     })
 };
 
