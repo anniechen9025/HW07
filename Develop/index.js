@@ -189,7 +189,7 @@ function init() {
         ${contribute}
         ${tests}`;
         writeToFile(context);
-    })
+    });
 };
 
 // Function call to initialize app
