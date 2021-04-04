@@ -56,9 +56,9 @@ const questions = [{
 },
 {
     type: "rawlist",
-    name: "license",
-    message: "License: Please picck license below:",
-    chois:[ "MIT", "ISC", "GNU GPLv2", "GNU GPLv3", "Apache License 2.0"]
+    name: "lincense",
+    message: "License: Please pick license below:",
+    choices:[ "MIT", "ISC", "GNU GPLv2", "GNU GPLv3", "Apache License 2.0"]
 },
 {
     type: "input",
@@ -107,6 +107,7 @@ function writeToFile(context) {
 function init() {
     inquirer.prompt(questions).then(data => {
         //TODO: Create README.md Context
+        console.log(data);
         let projecttitle = `# <${data.project}>`;
 
         let description = `## Description
@@ -119,22 +120,22 @@ function init() {
         let tbusage = " - [Usage](#usage)";
         let tbcredit =" - [Credits](#credits)";
         let tblincs = " - [License](#license)";
-        let tbbadge = " - [Badges](#badges";
-        let tbfeatu = " - [Features](#features";
+        let tbbadge = " - [Badges](#badges)";
+        let tbfeatu = " - [Features](#features)";
         let tbcontri = " - [Contributes](#contributes)";
-        let tbtest = " - [Tests](#tests";
-        let tbques = " - [Questions](#questions";
-        let table = `## Table of Contents
-${tbinsta}
-${tbusage}
-${tbcredit}
-${tblincs}
-${tbbadge}
-${tbfeatu}
-${tbcontri}
-${tbtest}
-${tbques}
-        `;
+        let tbtest = " - [Tests](#tests)";
+        let tbques = " - [Questions](#questions)";
+//         let table = `## Table of Contents
+// ${tbinsta}
+// ${tbusage}
+// ${tbcredit}
+// ${tblincs}
+// ${tbbadge}
+// ${tbfeatu}
+// ${tbcontri}
+// ${tbtest}
+// ${tbques}
+//         `;
 
         let install = `## Installation
         ${data.installation}
@@ -150,7 +151,7 @@ ${tbques}
         `;
 
         let lincense = `## License
-        ${data.lincese}
+        ${data.lincense}
         `;
 
         let badges = `## Badges
@@ -216,6 +217,17 @@ ${tbques}
             tests = "";
             tbtest = "";
         };
+        let table = `## Table of Contents
+${tbinsta}
+${tbusage}
+${tbcredit}
+${tblincs}
+${tbbadge}
+${tbfeatu}
+${tbcontri}
+${tbtest}
+${tbques}
+                `;
         let context =`${projecttitle}
 
 ${description} 
