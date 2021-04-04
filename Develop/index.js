@@ -215,7 +215,7 @@ function init() {
         };
         if (data.tests === "") {
             tests = "";
-            tbtest = "";
+            tbtest="";
         };
         let table = `## Table of Contents
 ${tbinsta}
