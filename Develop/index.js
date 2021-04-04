@@ -78,10 +78,21 @@ const questions = [{
     type: "input",
     name: "tests",
     message: "Test: Go the extra mile and write tests for your application. Then provide examples on how to run them here.",
+},
+{
+    type: "input",
+    name: "github",
+    message: "Please insert your github username",
+},
+{
+    type: "input",
+    name: "email",
+    message: "Please input your email",
 }];
 
 // TODO: Create a function to write README file
-function writeToFile(readmeFile, context) {
+function writeToFile(context) {
+    console.log(context);
     fs.writeFile("README.md", context, error => {
         if (error) {
             console.log(error);
@@ -95,51 +106,51 @@ function writeToFile(readmeFile, context) {
 function init() {
     inquirer.prompt(questions).then(data => {
         //TODO: Create README.md Context
-        const projecttitle = `# <${data.project}>`;
+        let projecttitle = `# <${data.project}>`;
 
-        const description = `## Description
+        let description = `## Description
         ${data.description1}
         ${data.description2}
         ${data.description3}
         ${data.description4}`;
 
-        const table = `## Table of Contents
+        let table = `## Table of Contents
         - [Installation](#installation)
         - [Usage](#usage)
         - [Credits](#credits)
         - [License](#license)
         `;
 
-        const install = `## Installation
+        let install = `## Installation
         ${data.installation}
         `;
 
-        const usage = `## Usage
+        let usage = `## Usage
         ${data.usage}
         ![Screenshot of HW website](${data.screenshot})
         `;
 
-        const credit = `## Credits
+        let credit = `## Credits
         ${data.credit}
         `;
 
-        const lincense = `## License
+        let lincense = `## License
         ${data.lincese}
         `;
 
-        const badges = `## Badges
+        let badges = `## Badges
         ${data.badges}
         `;
 
-        const features = `## Features
+        let features = `## Features
         ${data.features}
         `;
 
-        const contribute = `## How to Contribute
+        let contribute = `## How to Contribute
         ${data.contribute}
         `;
 
-        const tests = `## Tests
+        let tests = `## Tests
         ${data.tests}
         `;
         console.log(data);
@@ -176,18 +187,27 @@ function init() {
         if (data.tests === "") {
             tests = "";
         };
-        const context = 
-        `${projecttitle}
-        ${description}
-        ${table}
-        ${install}
-        ${usage}
-        ${credit}
-        ${lincense}
-        ${badges}
-        ${features}
-        ${contribute}
-        ${tests}`;
+        let context =`${projecttitle}
+
+${description} 
+
+${table} 
+
+${install} 
+
+${usage} 
+
+${credit} 
+
+${lincense} 
+
+${badges} 
+
+${features} 
+
+${contribute} 
+
+${tests}`;
         writeToFile(context);
     });
 };
