@@ -1,9 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const { title } = require("process");
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [{
     type: "input",
     name: "project",
@@ -91,7 +90,7 @@ const questions = [{
     message: "Please input your email",
 }];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(context) {
     console.log(context);
     fs.writeFile("README.md", context, error => {
@@ -103,11 +102,10 @@ function writeToFile(context) {
     });
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        //TODO: Create README.md Context
-        console.log(data);
+        // Create README.md Context
         let projecttitle = `# <${data.project}>`;
 
         let description = `## Description
@@ -125,17 +123,6 @@ function init() {
         let tbcontri = " - [Contributes](#contributes)";
         let tbtest = " - [Tests](#tests)";
         let tbques = " - [Questions](#questions)";
-//         let table = `## Table of Contents
-// ${tbinsta}
-// ${tbusage}
-// ${tbcredit}
-// ${tblincs}
-// ${tbbadge}
-// ${tbfeatu}
-// ${tbcontri}
-// ${tbtest}
-// ${tbques}
-//         `;
 
         let install = `## Installation
         ${data.installation}
@@ -143,7 +130,7 @@ function init() {
 
         let usage = `## Usage
         ${data.usage}
-        ![Screenshot of HW website](${data.screenshot})
+        ![Demo of Work](${data.screenshot})
         `;
 
         let credit = `## Credits
@@ -175,7 +162,7 @@ function init() {
         Github:https://github.com/${data.github}/
         Email:${data.email}`;
 
-        // console.log(data);
+        //Take of the section was not input ;
         if (data.project === "") {
             projecttitle = "";
         };
