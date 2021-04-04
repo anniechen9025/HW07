@@ -113,12 +113,26 @@ function init() {
         ${data.description2}
         ${data.description3}
         ${data.description4}`;
-
+        
+        let tbinsta = " - [Installation](#installation)";
+        let tbusage = " - [Usage](#usage)";
+        let tbcredit =" - [Credits](#credits)";
+        let tblincs = " - [License](#license)";
+        let tbbadge = " - [License](#license)";
+        let tbfeatu = " - [License](#license)";
+        let tbcontri = " - [License](#license)";
+        let tbtest = " - [License](#license)";
+        let tbques = " - [License](#license)";
         let table = `## Table of Contents
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [Credits](#credits)
-        - [License](#license)
+${tbinsta}
+${tbusage}
+${tbcredit}
+${tblincs}
+${tbbadge}
+${tbfeatu}
+${tbcontri}
+${tbtest}
+${tbques}
         `;
 
         let install = `## Installation
