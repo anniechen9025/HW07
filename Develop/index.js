@@ -55,9 +55,10 @@ const questions = [{
     message: "Credit: Please list out your collaborators, if any, with links to their GitHub Profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.",
 },
 {
-    type: "input",
+    type: "rawlist",
     name: "license",
-    message: "License: Please list",
+    message: "License: Please picck license below:",
+    chois:[ "MIT", "ISC", "GNU GPLv2", "GNU GPLv3", "Apache License 2.0"]
 },
 {
     type: "input",
@@ -235,7 +236,9 @@ ${features}
 
 ${contribute} 
 
-${tests}`;
+${tests}
+
+${question}`;
         writeToFile(context);
     });
 };
