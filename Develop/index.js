@@ -118,11 +118,11 @@ function init() {
         let tbusage = " - [Usage](#usage)";
         let tbcredit =" - [Credits](#credits)";
         let tblincs = " - [License](#license)";
-        let tbbadge = " - [License](#license)";
-        let tbfeatu = " - [License](#license)";
-        let tbcontri = " - [License](#license)";
-        let tbtest = " - [License](#license)";
-        let tbques = " - [License](#license)";
+        let tbbadge = " - [Badges](#badges";
+        let tbfeatu = " - [Features](#features";
+        let tbcontri = " - [Contributes](#contributes)";
+        let tbtest = " - [Tests](#tests";
+        let tbques = " - [Questions](#questions";
         let table = `## Table of Contents
 ${tbinsta}
 ${tbusage}
@@ -185,27 +185,35 @@ ${tbques}
         };
         if (data.installation === "") {
             install = "";
+            tbinsta = "";
         };
         if (data.usage === "" && data.screenshot === "") {
             usage = "";
+            tbusage = "";
         };
         if (data.credit === "") {
             credit = "";
+            tbcredit = "";
         };
         if (data.lincense === "") {
             lincense = "";
+            tblincs = "";
         };
         if (data.badges === "") {
             badges = "";
+            tbbadge = "";
         };
         if (data.features === "") {
             features = "";
+            tbfeatu = "";
         };
         if (data.contribute === "") {
             contribute = "";
+            tbcontri = "";
         };
         if (data.tests === "") {
             tests = "";
+            tbtest = "";
         };
         let context =`${projecttitle}
 
