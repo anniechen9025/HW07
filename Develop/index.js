@@ -167,7 +167,13 @@ ${tbques}
         let tests = `## Tests
         ${data.tests}
         `;
-        console.log(data);
+
+        let question = `## Quesrions
+        Please feel free to contact: 
+        Github:https://github.com/${data.github}/
+        Email:${data.email}`;
+
+        // console.log(data);
         if (data.project === "") {
             projecttitle = "";
         };
