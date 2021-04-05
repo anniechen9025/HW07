@@ -1,49 +1,31 @@
-# <README Generator>
-
+# <Professional README Generator>
 ## Description
-        It was a great practices to understanding how node work as backside and use all the skill
-         to build the generater by typing words in the terminal.
-        We build this is for practicing using node and also it can be used in the future when creating the readm
-        e just by using this generator. I learn how to required the npm in the javascript as third library which gives us more function to coding. 
-
-
- - [Installation](#installation)
- - [Usage](#usage)
-
- - [License](#license)
- - [Badges](#badges)
-
-
-
- - [Questions](#questions)
-                 
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+- What was your motivation?
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+- What problem does it solve?
+- What did you learn?
 
 ## Installation
-        npm package is need. (Please install it 
-         
+npm package is need. (Please install it by typing npm i in your terminal)
 
 ## Usage
-        by typing npm i in your terminal)
-        ![Demo of Work]()
-         
-
- 
+Provide instructions and examples for use. Include screenshots as needed.
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
 
 ## License
-        MIT
-         
+MIT
+
 
 ## Badges
-        /github/languages/top/:user/:repo
-         
-
- 
-
- 
+![badmath](https://img.shields.io/github/languages/top/:user/:repo)
 
 
 
-## Quesrions
+## Questions
         Please feel free to contact: 
         Github:https://github.com/anniechen9025/
         Email:anniechen9025@gmail.com

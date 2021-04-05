@@ -181,6 +181,7 @@ function init() {
             tbfeatu = "";
             tbcontri = "";
             tbtest="";
+            tbques = "";
         };
         if (data.installation === "") {
             install = "";
