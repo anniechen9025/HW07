@@ -141,6 +141,8 @@ function init() {
         ${data.lincense}
         `;
 
+        let tabletitle = "## Table of Contents";
+
         let badges = `## Badges
         ${data.badges}
         `;
@@ -170,7 +172,15 @@ function init() {
             description = "";
         };
         if (data.table === false) {
-            table = "";
+            tabletitle = "";
+            tbinsta = "";
+            tbusage = "";
+            tbcredit = "";
+            tblincs = "";
+            tbbadge = "";
+            tbfeatu = "";
+            tbcontri = "";
+            tbtest="";
         };
         if (data.installation === "") {
             install = "";
@@ -204,7 +214,8 @@ function init() {
             tests = "";
             tbtest="";
         };
-        let table = `## Table of Contents
+
+        let table = `${tabletitle}
 ${tbinsta}
 ${tbusage}
 ${tbcredit}
