@@ -10,7 +10,7 @@ npm package is need. (Please install it by typing npm i in your terminal)
 
 Demo:
 
-![Demo Video](/develop/Readme.gif)
+![Demo Video](Develop/Readme.gif)
  
 
 ## License
