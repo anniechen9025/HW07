@@ -1,31 +1,48 @@
-# <Professional README Generator>
+# <Readme>
+
 ## Description
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+        hi
+        the world 
+        I am happy
+        Javascript 
+
+## Table of Contents
+ - [Installation](#installation)
+
+ - [Credits](#credits)
+ - [License](#license)
+
+
+ - [Contributes](#contributes)
+
+ - [Questions](#questions)
+                 
 
 ## Installation
-npm package is need. (Please install it by typing npm i in your terminal)
+        npm
+         
 
-## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+ 
+
+## Credits
+        Nope
+         
 
 ## License
-MIT
+        MIT
+         
+
+ 
+
+ 
+
+## How to Contribute
+        none
+         
 
 
-## Badges
-![badmath](https://img.shields.io/github/languages/top/:user/:repo)
 
-
-
-## Questions
+## Quesrions
         Please feel free to contact: 
         Github:https://github.com/anniechen9025/
         Email:anniechen9025@gmail.com

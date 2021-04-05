@@ -9,7 +9,7 @@ npm package is need. (Please install it by typing npm i in your terminal)
 ## Usage
 
 Video:
-![Demo Video](assets/images/screenshot.png)
+![Demo Video](./develop/readme.mov)
  
 
 ## License
