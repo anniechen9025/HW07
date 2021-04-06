@@ -1,3 +1,5 @@
+![Lincense](https://img.shields.io/apm/l/npm)
+
 # 9.Professional README Generator
 
 ## Description
@@ -14,7 +16,7 @@ Demo:
  
 
 ## License
-MIT ![Lincense](https://img.shields.io/apm/l/npm)
+MIT 
 
 ## Badges
 ![GitHub Language](https://img.shields.io/github/languages/top/anniechen9025/Professional-README-Generator?style=for-the-badge)
