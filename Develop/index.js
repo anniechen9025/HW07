@@ -57,7 +57,7 @@ const questions = [{
     type: "rawlist",
     name: "lincense",
     message: "License: Please pick license below:",
-    choices:[ "MIT", "ISC", "GNU GPLv2", "GNU GPLv3", "Apache License 2.0"]
+    choices:[ "MIT", "Apache License 2.0"]
 },
 {
     type: "input",
@@ -159,10 +159,14 @@ function init() {
         ${data.tests}
         `;
 
+        let lincenseBadge = "";
+
         let question = `## Quesrions
         Please feel free to contact: 
         Github:https://github.com/${data.github}/
         Email:${data.email}`;
+
+        console.log(data.lincense)
 
         //Take of the section was not input ;
         if (data.project === "") {
@@ -199,6 +203,12 @@ function init() {
             lincense = "";
             tblincs = "";
         };
+        if(data.lincense ==="MIT"){
+            lincenseBadge = "![Lincense](https://img.shields.io/apm/l/npm)"
+        };
+        if(data.lincense ==="Apache License 2.0"){
+            lincenseBadge = "![Lincense](https://img.shields.io/hexpm/l/plug)"
+        };
         if (data.badges === "") {
             badges = "";
             tbbadge = "";
@@ -227,7 +237,8 @@ ${tbcontri}
 ${tbtest}
 ${tbques}
                 `;
-        let context =`${projecttitle}
+        let context =`${lincenseBadge}
+${projecttitle}
 
 ${description} 
 
