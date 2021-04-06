@@ -14,7 +14,7 @@ Demo:
  
 
 ## License
-MIT
+MIT ![Lincense](https://img.shields.io/apm/l/npm)
 
 ## Badges
 ![GitHub Language](https://img.shields.io/github/languages/top/anniechen9025/Professional-README-Generator?style=for-the-badge)
